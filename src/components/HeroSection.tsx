@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import dashboardMockup from "@/assets/dashboard-mockup.jpg";
+import dashboardImg from "@/assets/tela-dashboard.png";
 
 const badges = [
   "Sem fidelidade",
@@ -58,12 +58,10 @@ const HeroSection = () => (
           transition={{ duration: 0.7, delay: 0.2 }}
           className="relative"
         >
-          <div className="rounded-2xl overflow-hidden shadow-2xl border">
+          <div className="rounded-2xl overflow-hidden shadow-2xl border bg-card">
             <img
-              src={dashboardMockup}
+              src={dashboardImg}
               alt="Dashboard do Gestor360° mostrando métricas de atendimento"
-              width={1280}
-              height={800}
               className="w-full h-auto"
             />
           </div>

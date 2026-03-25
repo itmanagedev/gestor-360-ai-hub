@@ -83,6 +83,11 @@ const Header = () => {
               {item.label}
             </a>
           ))}
+          <Button variant="outline" asChild className="w-full">
+            <a href="#contato" onClick={() => setMobileOpen(false)}>
+              Login
+            </a>
+          </Button>
           <Button asChild className="w-full">
             <a href="#contato" onClick={() => setMobileOpen(false)}>
               Solicitar Demo

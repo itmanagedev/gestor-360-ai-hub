@@ -51,7 +51,10 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <Button variant="outline" className="border-border text-foreground hover:bg-muted" asChild>
+            <a href="#contato">Login</a>
+          </Button>
           <Button asChild>
             <a href="#contato">Solicitar Demo</a>
           </Button>

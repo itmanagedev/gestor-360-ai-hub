@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Play } from "lucide-react";
+import VideoModal from "@/components/VideoModal";
 import dashboardMockup from "@/assets/dashboard-mockup.jpg";
 
 const badges = [

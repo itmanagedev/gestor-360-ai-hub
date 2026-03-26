@@ -76,6 +76,9 @@ const HeroSection = () => {
       </div>
     </div>
   </section>
-);
+  <VideoModal open={videoOpen} onOpenChange={setVideoOpen} />
+  </>
+  );
+};
 
 export default HeroSection;

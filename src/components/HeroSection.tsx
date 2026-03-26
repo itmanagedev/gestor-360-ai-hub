@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Play } from "lucide-react";
+import VideoModal from "@/components/VideoModal";
 import dashboardMockup from "@/assets/dashboard-mockup.jpg";
 
 const badges = [
@@ -9,7 +11,11 @@ const badges = [
   "Suporte incluso",
 ];
 
-const HeroSection = () => (
+const HeroSection = () => {
+  const [videoOpen, setVideoOpen] = useState(false);
+
+  return (
+  <>
   <section id="inicio" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
     {/* Background shapes */}
     <div className="absolute inset-0 -z-10">
@@ -38,8 +44,8 @@ const HeroSection = () => (
             <Button size="lg" asChild>
               <a href="#contato">Começar Agora</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
-              <a href="#produto">Ver Demo</a>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 gap-2" onClick={() => setVideoOpen(true)}>
+              <Play size={18} /> Ver Demo
             </Button>
           </div>
 
@@ -71,6 +77,9 @@ const HeroSection = () => (
       </div>
     </div>
   </section>
-);
+  <VideoModal open={videoOpen} onOpenChange={setVideoOpen} />
+  </>
+  );
+};
 
 export default HeroSection;

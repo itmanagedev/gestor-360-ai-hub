@@ -43,8 +43,8 @@ const HeroSection = () => {
             <Button size="lg" asChild>
               <a href="#contato">Começar Agora</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5" asChild>
-              <a href="#produto">Ver Demo</a>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5 gap-2" onClick={() => setVideoOpen(true)}>
+              <Play size={18} /> Ver Demo
             </Button>
           </div>
 

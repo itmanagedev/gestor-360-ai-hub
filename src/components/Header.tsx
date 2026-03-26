@@ -51,10 +51,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" className="border-border text-foreground hover:bg-muted" asChild>
-            <a href="#contato">Login</a>
-          </Button>
+        <div className="hidden md:block">
           <Button asChild>
             <a href="#contato">Solicitar Demo</a>
           </Button>
@@ -83,11 +80,6 @@ const Header = () => {
               {item.label}
             </a>
           ))}
-          <Button variant="outline" asChild className="w-full">
-            <a href="#contato" onClick={() => setMobileOpen(false)}>
-              Login
-            </a>
-          </Button>
           <Button asChild className="w-full">
             <a href="#contato" onClick={() => setMobileOpen(false)}>
               Solicitar Demo

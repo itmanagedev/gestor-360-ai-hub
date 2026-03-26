@@ -11,7 +11,10 @@ const badges = [
   "Suporte incluso",
 ];
 
-const HeroSection = () => (
+const HeroSection = () => {
+  const [videoOpen, setVideoOpen] = useState(false);
+
+  return (
   <section id="inicio" className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
     {/* Background shapes */}
     <div className="absolute inset-0 -z-10">

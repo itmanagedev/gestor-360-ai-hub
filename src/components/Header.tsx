@@ -84,7 +84,7 @@ const Header = () => {
             </a>
           ))}
           <Button variant="outline" asChild className="w-full">
-            <a href="https://gestor360.app/login" onClick={() => setMobileOpen(false)}>
+            <a href="https://gestor360.app/login" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
               Entrar
             </a>
           </Button>

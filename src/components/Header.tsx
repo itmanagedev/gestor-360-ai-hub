@@ -53,7 +53,7 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <Button asChild>
-            <a href="https://app.gestor360.com/login">Entrar</a>
+            <a href="https://gestor360.app/login">Entrar</a>
           </Button>
           <Button asChild>
             <a href="#contato">Solicitar Demo</a>

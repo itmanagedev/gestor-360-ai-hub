@@ -51,7 +51,10 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <Button variant="ghost" asChild>
+            <a href="https://app.gestor360.com/login">Entrar</a>
+          </Button>
           <Button asChild>
             <a href="#contato">Solicitar Demo</a>
           </Button>
